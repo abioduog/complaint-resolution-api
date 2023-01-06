@@ -33,8 +33,10 @@ app.post('/new-issue', (req, res) => {
       
       newIssue.save((error) => {
         if (error) {
+          res.send('error')
           console.log(error);
         } else {
+          res.send('success')
           console.log('Issue saved successfully');
         }
       });
