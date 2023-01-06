@@ -15,7 +15,7 @@ mongoose.set('strictQuery', false);
 
 // Connect to MongoDB database
 mongoose.connect('mongodb://localhost:27017/complaint-resolution', { useNewUrlParser: true, useUnifiedTopology: true });
- 
+
 // Set up a simple route
 app.get('/', (req, res) => {
   res.send('Hello World!');
